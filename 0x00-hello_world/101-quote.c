@@ -3,10 +3,8 @@
 
 /**
 * main - Function begins
-*
 * Return: Function ends
 */
-
 int main(void)
 {
 	write(STDOUT_FILENO, "and that piece of art is useful
