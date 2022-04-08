@@ -1,14 +1,14 @@
-/* Auth: Gbemi Jacob Adebayo
- */
+/*
+* Auth: Gbemi Jacob Adebayo
+*/
 
 #include <stdio.h>
 
 /**
- * main - Function to print all single digit numbers of base 10 
+ * main - Function to print all single digit numbers of base 10
  * starting from 0, only using putchar and without char variables.
- *
  * Return: Always 0.
- */
+*/
 
 int main(void)
 {
