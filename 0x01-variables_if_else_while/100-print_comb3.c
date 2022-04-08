@@ -1,5 +1,6 @@
-/* Auth: Gbemi Jacob Adebayo
- */
+/*
+* Auth: Gbemi Jacob Adebayo
+*/
 
 #include <stdio.h>
 
