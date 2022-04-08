@@ -1,15 +1,14 @@
-/* Auth: Gbemi Jacob Adebayo
- */
+/*
+*Auth: Gbemi Jacob Adebayo
+*/
 
 #include <stdio.h>
 
 /**
- * main - Function to prints all single digit numbers 
- * of base 10 starting from 0.
- *
- * Return: Always 0.
- */
- 
+* main - Function to prints all single digit numbers
+* of base 10 starting from 0.
+* Return: Always 0.
+*/
 int main(void)
 {
 	int num;
