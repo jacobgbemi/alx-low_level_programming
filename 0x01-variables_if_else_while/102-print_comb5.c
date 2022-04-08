@@ -1,5 +1,5 @@
-/* 
-* Auth: Brennan D Baraban
+/*
+ * Auth: Brennan D Baraban
 */
 
 #include <stdio.h>
@@ -10,7 +10,7 @@
  *
  * Return: Always 0.
  */
- 
+
 int main(void)
 {
 	int num1, num2;
