@@ -5,10 +5,8 @@
 #include "main.h"
 
 /**
-* main - print_alphabet function prototype to print in lowercase,
+* print_alphabet - function prototype to print alphabet in lowercase,
 * followed by a new line
-*
-* Return: Nothing (void)
 */
 
 void print_alphabet(void)
