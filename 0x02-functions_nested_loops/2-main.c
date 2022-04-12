@@ -1,7 +1,7 @@
-#include "myheaders.h"
+#include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code for me.
 */
 
 int main(void)
