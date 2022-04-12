@@ -1,5 +1,5 @@
-#ifndef MYHEADERS_H
-#define MYHEADERS_H
+#ifndef MAIN_H
+#define MAIN_H
 /*
  * Auth: Gbemi Jacob Adebayo
  * Desc: Header file containing declarations for all functions
