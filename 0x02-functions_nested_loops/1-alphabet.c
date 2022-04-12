@@ -2,7 +2,7 @@
 * Auth: Gbemi Jacob Adebayo
 */
 
-#include "myheaders.h"
+#include "main.h"
 
 /**
  *  prints the alphabet in lowercase, followed by a new line
