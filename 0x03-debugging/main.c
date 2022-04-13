@@ -1,5 +1,7 @@
 #include "main.h"
-/* Auth: Gbemi Jacob Adebayo */
+/*
+* Auth: Gbemi Jacob Adebayo
+*/
 
 /**
  * main - tests function that prints if integer is positive or negative
