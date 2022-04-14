@@ -1,2 +1,1 @@
-DUBUGGING
-Debugging is the process of finding and fixing errors in software that prevents it from running correctly.
+This document the tasks for code debugging
