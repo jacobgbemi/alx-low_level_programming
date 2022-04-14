@@ -1,5 +1,7 @@
 # 0x03. C - Debugging
 Debugging is the process of finding and fixing errors in software that prevents it from running correctly.
+- [Debugging](https://en.wikipedia.org/wiki/Debugging)
+- [Rubber Duck Debugging](https://www.thoughtfulcode.com/rubber-duck-debugging-psychology/)
 
 ### 0. Multiple mains
 In most projects, we often give you only one main file to test with. For example, this main file is a test for a postitive_or_negative() function similar to the one you worked with in an earlier C project:
