@@ -150,8 +150,12 @@ void print_remaining_days(int month, int day, int year)
 }
 
 ```
-``` debugging$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 3-convert_day.c 3-print_remaining_days.c 3-main_a.c -o 3-main_a ```
-``` debugging$ ./3-main_a ```
+``` 
+debugging$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 3-convert_day.c 3-print_remaining_days.c 3-main_a.c -o 3-main_a 
+```
+``` 
+debugging$ ./3-main_a 
+```
 
 ? That doesn’t seem right.
 Fix the print_remaining_days() function so that the output works correctly for all dates and all leap years.
