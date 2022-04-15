@@ -33,7 +33,7 @@ In this project, I learned about comments”, “Data types | Integer types”, 
 
 ### 8. Hexadecimal
 - [8-print_base16.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x01-variables_if_else_while/8-print_base16.c) - a C program that prints all the numbers of base 16 in lowercase, followed by a new line.
-  - You can only use the ```putchar``` function and only use it thrice
+  - You can only use the ```putchar``` function and only use it thrice.
 
 ### 9. Patience, persistence and perspiration make an unbeatable combination for success
 - [9-print_comb.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x01-variables_if_else_while/9-print_comb.c) -  a C program that prints all possible combinations of single-digit numbers.
