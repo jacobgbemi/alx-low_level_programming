@@ -53,7 +53,7 @@ In this project, I learned how to use Nested while loops, for loops, and C - Fun
 - [103-fibonacci.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x02-functions_nested_loops/103-fibonacci.c) - a program that finds and prints the sum of the even-valued terms, followed by a new line.
 
 ###  In computer class, the first assignment was to write a program to print the first 100 Fibonacci numbers. Instead, I wrote a program that would steal passwords of students. My teacher gave me an A+
--[104-fibonacci.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x02-functions_nested_loops/104-fibonacci.c) - a program that finds and prints the first 98 Fibonacci numbers, starting with ```1``` and ```2```, followed by a new line.
+-[104-fibonacci.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x02-functions_nested_loops/104-fibonacci.c) - a program that finds and prints the first 98 Fibonacci numbers, starting with ```1``` and ```2```, followed by a new line
 
 
 
