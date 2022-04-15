@@ -48,5 +48,5 @@ In this project, I learned about comments”, “Data types | Integer types”, 
   - You can only use the ```putchar``` function and only use it six times
 
 ### 12. Software is eating the World
-- []() - a C program that prints all possible combinations of two two-digit numbers.
+- [102-print_comb5.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x01-variables_if_else_while/102-print_comb5.c) - a C program that prints all possible combinations of two two-digit numbers.
   - You can only use the ```putchar``` function and only use it eight times
