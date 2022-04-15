@@ -113,5 +113,5 @@ In this project, I learned how to manually debug a C program, and the [step by s
     }
 
     ```
-   - use the [3-main_a.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x03-debugging/3-main-a.c), [3-main_b.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x03-debugging/3-main-b.c) and [3-convert_day.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x03-debugging/3-convert_day.c) to confirm your code works. 
+   - use the [3-main_a.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x03-debugging/3-main-a.c), [3-main_b.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x03-debugging/3-main-b.c) and [3-convert_day.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x03-debugging/3-convert_day.c) to confirm your code works
 
