@@ -1,6 +1,6 @@
 # 0x02-functions_nested_loops
 
-In this project, I learned how to use Nested while loops, for loops, and C - Functions. I also learned how to use ```header file``` in C, by creating a [main.h]() where I kept all prototype functions.
+In this project, I learned how to use Nested while loops, for loops, and C - Functions. I also learned how to use ```header file``` in C, by creating a [main.h](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x02-functions_nested_loops/main.h) where I kept all prototype functions.
 
 ### 0. _putchar
 - [0-putchar.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x02-functions_nested_loops/0-putchar.c) - a program that prints ```_putchar```, followed by a new line.
@@ -47,7 +47,7 @@ In this project, I learned how to use Nested while loops, for loops, and C - Fun
 - [101-natural.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x02-functions_nested_loops/101-natural.c) - a program that computes and prints the sum of all the multiples of 3 or 5 below 1024 (excluded), followed by a new line.
 
 ### 14. In computer class, the first assignment was to write a program to print the first 100 Fibonacci numbers. Instead, I wrote a program that would steal passwords of students.
-- [102-fibonacci.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x02-functions_nested_loops/102-fibonacci.c) - a program that prints the first 50 Fibonacci numbers, starting with 1 and 2, followed by a new line.
+- [102-fibonacci.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x02-functions_nested_loops/102-fibonacci.c) - a program that prints the first 50 Fibonacci numbers, starting with ```1``` and ```2```, followed by a new line.
 
 ### 15. Even Liber Abbaci
 - [103-fibonacci.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x02-functions_nested_loops/103-fibonacci.c) - a program that finds and prints the sum of the even-valued terms, followed by a new line.
