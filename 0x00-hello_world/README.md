@@ -24,7 +24,7 @@ In this project, I started by learning a brief history of C, and learned the fun
 
 ### 6. Size is not grandeur, and territory does not make a nation
 - [6-size.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x00-hello_world/6-size.c) - a C program that prints the size of various types on the computer it is compiled and run on
-  - Installed the package libc6-dev-i386 on Linux to test the -m32 gcc option
+  - Installed the package libc6-dev-i386 on Linux to test the -m32 gcc option.
 
 ### 7. Intel
 - [100-intel](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x00-hello_world/100-intel) - a script that generates the assembly code (Intel syntax) of a C code and save it in an output file
