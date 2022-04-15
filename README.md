@@ -1,4 +1,4 @@
-# Low Level Programming
+# Low Level Programming & Algorithm
 
 This repository contains programs written for Low Level Programming track in the [ALX](https://www.alxafrica.com/) program. In these projects, I worked through virtual machine (Vagrant) using Linux terminal to write basic C codes, starting with understanding data types, variables, input and output commands, operators, if-else statements, looping, functions and neseted loops . I learned how to apply these knowledge to solve practical problems.
 
