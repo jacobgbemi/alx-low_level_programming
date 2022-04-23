@@ -9,7 +9,7 @@
  * Return: An encode string
  */
 
-char *rot13(char *str)
+char *rot13(char *s)
 {
 	int i = 0;
 
