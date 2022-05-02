@@ -5,14 +5,14 @@
 /**
  * main - multiplication of two number argument passed to program
  * @argc: argument counter
- * @argv: pointer to array of arguments
- * Return: 0 on success
+ * @argv: arguments to multiply
+ * Return: 0 on success, 1 if two numbers not given
  */
 
 int main(int argc, char *argv[])
 {
 	int result = 0;
-	
+
 	if (argc == 3)
 	{
 		result = atoi(argv[1]) * atoi(argv[2]);
