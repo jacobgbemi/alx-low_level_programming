@@ -12,4 +12,4 @@ In this project, I learned the use of static library in C, and the difference be
   - To see the symbols used in the library, do: ``` nm libmy.a```
 
 ### 1. Without libraries what have we? We have no past and no future
--[create_static_lib.sh](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x09-static_libraries/create_static_lib.sh) - a script that creates a static library called liball.a from all the ```.c``` files that are in the current directory.
+- [create_static_lib.sh](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x09-static_libraries/create_static_lib.sh) - a script that creates a static library called liball.a from all the ```.c``` files that are in the current directory.
