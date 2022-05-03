@@ -6,6 +6,8 @@ In this project, I learned the use of static library in C, and the difference be
 
 ### 0. A library is not a luxury but one of the necessities of life
 - [libmy.a](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x09-static_libraries/libmy.a) - a static library containing all the functions listed in [main.h](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x09-static_libraries/main.h)
+  - ### Steps to Complete This Task
+  - To copy the c-files from other directory to working directory, e.g. 0x09-static_libraries, do: ```cp ../0x04-more_functions_nested_loops/0-isupper.c 0-isupper.c```
   - To compile your c-files into object files, do: ```gcc -Wall -Werror -Wextra -pedantic -c *.c```
   - To create the static library (```libmy.a```) and stored the object files in it, do: ```ar -cr libmy.a *.o```
   - To see the object files stored in ```libmy.a```, do: ```ar -t libmy.a```  
