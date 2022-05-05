@@ -34,33 +34,32 @@
   - ### Steps to Get the Password
     - 1. Clone the file - [crackme2](https://github.com/holbertonschool/0x06.c)
     -  2. Install openssl, 
-        - Type the command: sudo apt install libssl-dev
+        - Type the command: ```sudo apt install libssl-dev```
     - 3. Edit the source list
-        - Type the command: sudo nano /etc/apt/sources.list
-        - Add this to the file: deb http://security.ubuntu.com/ubuntu xenial-security main
+        - Type the command: ```sudo nano /etc/apt/sources.list```
+        - Add this to the file: ```deb http://security.ubuntu.com/ubuntu xenial-security main```
         - Exit nano
-        - Type the command: sudo apt update
-        - Type the command: sudo apt install libssl1.0.0
+        - Type the command: ```sudo apt update```
+        - Type the command: ```sudo apt install libssl1.0.0```
     -  4. In the 0x06.c directory
-        - First run the file: $ ./crackme2
+        - First run the file: $ ```./crackme2```
         - Note the response
     - 5. Test the file type
-        - Do: $ file crackme2
+        - Do: $ ```file crackme2```
         - Note the response
     -  6. Do ltrace on your terminal
-        - Do: $ ltrace ./crackme2
+        - Do: $ ```ltrace ./crackme2```
         - Note the last strings like this: strncmp("_=/usr/bin/ltrace", "jennieandjayloveasm=", 20) = -11
-        - Copy this string: jennieandjayloveasm
+        - Copy this string: ```jennieandjayloveasm```
     -  7. Do this next on your terminal
-        - $ export jennieandjayloveasm=hey
-        - ltrace ./crackme2
+        - $ ```export jennieandjayloveasm=hey```
+        - ```ltrace ./crackme2```
         - Note the response: strcmp("d8578edf8458ce06fbc5bb76a58c5ca4"…, "6057f13c496ecf7fd777ceb9e79ae285"…) = 46
-        - Copy the md5 hash: d8578edf8458ce06fbc5bb76a58c5ca4
-    -  8 Go to this website to convert the md5 hash to string
-        - [md5 site](http://md5.gromweb.com/?md5=d8578edf8458ce06fbc5bb76a58c5ca4)
+        - Copy the md5 hash: ```d8578edf8458ce06fbc5bb76a58c5ca4```
+    -  8 Go to this website to convert the md5 hash to string: [md5 site](http://md5.gromweb.com/?md5=d8578edf8458ce06fbc5bb76a58c5ca4)
         - the result is the passord.
     -  9. Now enter the following command your terminal
-        - echo -n 'password' > 101-crackme_password
-        - chmod u+x 101-crackme_password
+        - ```echo -n 'password' > 101-crackme_password```
+        - ```chmod u+x 101-crackme_password```
     -  10. Push to your github
     -  And wala
