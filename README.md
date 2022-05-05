@@ -9,6 +9,11 @@ This repository contains programs written for Low Level Programming track in the
 - [0x04-more_functions_nested_loops](https://github.com/jacobgbemi/alx-low_level_programming/tree/master/0x04-more_functions_nested_loops)
 - [0x05-pointers_arrays_strings](https://github.com/jacobgbemi/alx-low_level_programming/tree/master/0x05-pointers_arrays_strings)
 - [0x06-pointers_arrays_strings](https://github.com/jacobgbemi/alx-low_level_programming/tree/master/0x06-pointers_arrays_strings)
+- [0x07-pointers_arrays_strings](https://github.com/jacobgbemi/alx-low_level_programming/tree/main/0x07-pointers_arrays_strings)
+- [0x08-recursion](https://github.com/jacobgbemi/alx-low_level_programming/tree/main/0x08-recursion)
+- [0x09-static_libraries](https://github.com/jacobgbemi/alx-low_level_programming/tree/main/0x09-static_libraries)
+- [0x0A-argc_argv](https://github.com/jacobgbemi/alx-low_level_programming/tree/main/0x0A-argc_argv)
+- [0x0B-malloc_free](https://github.com/jacobgbemi/alx-low_level_programming/tree/main/0x0B-malloc_free)
 
 
 ### Tools
