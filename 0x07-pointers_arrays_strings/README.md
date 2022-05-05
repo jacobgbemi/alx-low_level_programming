@@ -56,7 +56,7 @@
         - ```ltrace ./crackme2```
         - Note the response: strcmp("d8578edf8458ce06fbc5bb76a58c5ca4"…, "6057f13c496ecf7fd777ceb9e79ae285"…) = 46
         - Copy the md5 hash: ```d8578edf8458ce06fbc5bb76a58c5ca4```
-    -  8 Go to this website to convert the md5 hash to string: [md5 site](http://md5.gromweb.com/?md5=d8578edf8458ce06fbc5bb76a58c5ca4)
+    -  8. Go to this website to convert the md5 hash to string: [md5 site](http://md5.gromweb.com/?md5=d8578edf8458ce06fbc5bb76a58c5ca4)
         - the result is the passord.
     -  9. Now enter the following command your terminal
         - ```echo -n 'password' > 101-crackme_password```
