@@ -44,7 +44,7 @@ In this project, I learned about comments”, “Data types | Integer types”, 
   - You can only use the ```putchar``` function and only use it five times
 
 ### 11. The success combination in business is: Do what you do better... and: do more of what you do...
-- [12. Software is eating the World](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x01-variables_if_else_while/101-print_comb4.c) - a C program that prints all possible different combinations of three digits.
+- [101-print_comb4.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/master/0x01-variables_if_else_while/101-print_comb4.c) - a C program that prints all possible different combinations of three digits.
   - You can only use the ```putchar``` function and only use it six times
 
 ### 12. Software is eating the World
