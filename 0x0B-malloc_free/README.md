@@ -1,6 +1,6 @@
 # 0x0B. C - malloc, free
 
-In this project, I leaned that ```malloc``` function is used to allocate a certain amount of memory during the execution of a program, and ```free``` function is used to clear this memory when no longer in use. I applied these two functions in the tasks below. My function prototypes are saved in [holberton.h](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x0B-malloc_free/holberton.h).
+In this project, I leaned that ```malloc``` function is used to allocate a certain amount of memory during the execution of a program, and ```free``` function is used to clear this memory when no longer in use. I applied these two functions in the tasks below. I also leaned that ```Valgrind``` is used for memoery debugging, memory leak detection, and profiling. My function prototypes are saved in [holberton.h](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x0B-malloc_free/holberton.h).
 
 ## Tasks
 
@@ -18,6 +18,8 @@ In this project, I leaned that ```malloc``` function is used to allocate a certa
 
 ### 4. It's not bragging if you can back it up
 - [4-free_grid.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x0B-malloc_free/4-free_grid.c) - a function that frees a 2 dimensional grid previously created by your ```alloc_grid``` function.
+  - Use ```Valgrind``` to confirm that the allocated memory has been freed.
+  - To install ```Valgrind```, do: ```sudo apt install Valgrind```
 
 ### 5. It isn't the mountains ahead to climb that wear you out; it's the pebble in your shoe
 - [100-argstostr.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x0B-malloc_free/100-argstostr.c) - a function that concatenates all the arguments of your program.
