@@ -1,6 +1,6 @@
 # 0x0B. C - malloc, free
 
-In this project, I leaned that ```malloc``` function is used to allocate a certain amount of memory during the execution of a program, and ```free``` function is used to clear this memory when no longer in use. I applied these two functions in the tasks below. I also leaned that ```Valgrind``` is used for memoery debugging, memory leak detection, and profiling. My function prototypes are saved in [holberton.h](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x0B-malloc_free/holberton.h).
+In this project, I leaned that ```malloc``` function is used to allocate a certain amount of memory during the execution of a program, and ```free``` function is used to clear this memory when no longer in use. I applied these two functions in the tasks below. I also leaned that ```Valgrind``` is used for memory debugging, memory leak detection, and profiling. My function prototypes are saved in [holberton.h](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x0B-malloc_free/holberton.h).
 
 ## Tasks
 
