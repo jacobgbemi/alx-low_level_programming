@@ -1,6 +1,6 @@
 #ifndef FUNCTION_LIKE_MACRO_H
 #define FUNCTION_LIKE_MACRO_H
-/**
+/*
  * Description: Header file that defines a function like macro ABS(x)
  */
 
