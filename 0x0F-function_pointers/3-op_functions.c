@@ -1,5 +1,5 @@
 /**
- * p_add - add
+ * op_add - add
  * @a: integer
  * @b: integer
  * Return: result
