@@ -13,6 +13,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdbool.h>
+#include <string.h>
 
 
 /* length & state macros */
@@ -33,6 +34,7 @@
 
 
 int(char c);
+void hex_convert(char *str, char *hex);
 void puts(const char* str);
 int* print_number(int ap, int length, bool sign, int radix);
 void _printf(const char* format, ...);

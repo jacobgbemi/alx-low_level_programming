@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * printf_number - function to print number argument passed into it
  * @ap: the argument parameter
@@ -8,11 +10,10 @@
  */
 
 
-const char g_HexChars[] "0123456789abcdef";
 
 int* printf_number(int* ap, int length, bool sign, int radix)
 {
-	char buffer[32];
+	char buffer[100];
 	unsigned long long number;
 	int number_sign = 1;
 	int position = 0; /* current position in the buffer   */
@@ -86,11 +87,11 @@ int* printf_number(int* ap, int length, bool sign, int radix)
 	
 	/* convert number to ASCII (string) */
 	do
-	{
-		x86_div64_32(number, radix, &number, &rem); /* corect answer */
-		int32_t rem = number % radix; // removed
-		number = number / radix; // removed
-		buffer[position++] = g_HexChars[rem];
+	{	char *ptr_number;
+		ptr_number = &number;
+		ptr_number++;
+		hex_convert(ptr_number, hexavalue);
+		buffer[position++] = hexavalue;
 	} while (number > 0); 
 
 	/* add sign */
