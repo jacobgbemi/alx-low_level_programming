@@ -8,9 +8,10 @@
   */
 
 
-int *(int*)oct_convert(int decnum)
+int oct_convert(int decnum)
 {
 	int octnum = 0, temp = 1;
+	
 
 	while (decnum != 0)
 	{

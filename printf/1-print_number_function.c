@@ -13,7 +13,7 @@
 
 int* printf_number(int* ap, int length, bool sign, int radix)
 {
-	char buffer[100];
+	char *buffer;
 	unsigned long number;
 	int number_sign = 1;
 	int position = 0; /* current position in the buffer   */
@@ -91,24 +91,20 @@ int* printf_number(int* ap, int length, bool sign, int radix)
 		if (radix == 16)
 		{
 			char *ptr_number = (char*)&number;
-			char *hexavalue;
-
-			*hexavalue = 0;
+			
 			ptr_number++;
-			hex_convert(ptr_number, hexavalue);
-			buffer[position++] = *hexavalue;
+			hex_convert(ptr_number, buffer[position++]);
 		}
 		else if (radix == 8)
 		{
-			int *ptr_octal = (int*)&number;
-			char *octalvalue;
-			
-			octalvalue = 0;
+			int *ptr_octal =(int*)&number;
+						
 			ptr_octal++;
-			octavalue = (char*)oct_convert(ptr_octal);
-			buffer[position++] = *octalvaule;
+			buffer[position++] = oct_convert(*ptr_octal);
+	
 		}
-	} while (number > 0); 
+
+	}while (number > 0); 
 
 	/* add sign */
 	if (sign && number_sign < 0)
