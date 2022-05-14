@@ -1,9 +1,12 @@
+#include "main.h"
+
+
 #define PRINTF_STATE_NORMAL 0
 #define PRINTF_STATE_LENGTH 1
 #define PRINTF_STATE_LENGTH_SHORT 2
 #define PRINTF_STATE_LENGTH_LONG 3
 #define PRINTF_STATE_SPEC 4
-#define PRINTF_STATE_SPEC_DEFAULT 0
+/* #define PRINTF_STATE_SPEC_DEFAULT 0 */
 
 #define PRINTF_LENGTH_DEFAULT 0
 #define PRINTF_LENGTH_SHORT_SHORT 1
@@ -11,7 +14,7 @@
 #define PRINTF_LENGTH_LONG 3
 #define PRINTF_LENGHT_LONG_LONG 4
 
-void _cdecl printf(const char* format, ...)
+void _printf(const char* format, ...)
 {
 	int* ap = (int*)&format; /* ap - argument parameter */
 	int state = PRINTF_STATE_NORMAL;
@@ -49,7 +52,7 @@ void _cdecl printf(const char* format, ...)
 				state = PRINTF_STATE_LENGTH_LONG;
 				break;
 			default:
-				goto PRINTF_STATE_SPEC_DEFAULT;
+				format++;
 				break;
 			}
 			break;
@@ -62,7 +65,7 @@ void _cdecl printf(const char* format, ...)
 				state = PRINTF_STATE_SPEC;
 				break;
 			default:
-				goto PRINTF_STATE_SPEC_DEFAULT;
+				format++;
 				break;
 			}
 			break;
@@ -75,7 +78,7 @@ void _cdecl printf(const char* format, ...)
 				state = PRINTF_STATE_SPEC;
 				break;
 			defaUlt:
-				goto PRINTF_STATE_SPEC_DEFAULT;
+				format++;
 				break;
 
 			}
@@ -86,11 +89,11 @@ void _cdecl printf(const char* format, ...)
 			{
 			case 'c':
 				_putchar((char)*ap);
-				ap++;
+				ap += 1;
 				break;
 			case 's':
-				puts(*(char**)ap);
-				ap++;
+				_puts(*(char**)ap);
+				ap += 1;
 				break;
 			case '%':
 				_putchar('%');

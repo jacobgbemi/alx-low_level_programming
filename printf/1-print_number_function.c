@@ -15,7 +15,7 @@ int* printf_number(int* ap, int length, bool sign, int radix)
 	char buffer[32];
 	unsigned long long number;
 	int number_sign = 1;
-	int position = 0;
+	int position = 0; /* current position in the buffer   */
 	
 	/* process length */
 	switch (length)
@@ -44,7 +44,7 @@ int* printf_number(int* ap, int length, bool sign, int radix)
 	
 	case PRINTF_LENGTH_LONG:
 		if (sign)
-		{
+		{ 
 			long int n = *(long int*)ap;
 
 			if (n < 0)
@@ -84,7 +84,7 @@ int* printf_number(int* ap, int length, bool sign, int radix)
 		break;
 	}
 	
-	/* convert number to ASCII */
+	/* convert number to ASCII (string) */
 	do
 	{
 		x86_div64_32(number, radix, &number, &rem); /* corect answer */
@@ -105,4 +105,4 @@ int* printf_number(int* ap, int length, bool sign, int radix)
 
 	return ap;
 
-}
+} 
