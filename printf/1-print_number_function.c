@@ -1,4 +1,4 @@
-#include "main.h"
+#include "3-main.h"
 
 /**
  * printf_number - function to print number argument passed into it
@@ -14,7 +14,7 @@
 int* printf_number(int* ap, int length, bool sign, int radix)
 {
 	char buffer[100];
-	unsigned long long number;
+	unsigned long number;
 	int number_sign = 1;
 	int position = 0; /* current position in the buffer   */
 	
@@ -54,11 +54,11 @@ int* printf_number(int* ap, int length, bool sign, int radix)
 				number_sign = -1;
 
 			}
-			number = (unsigned long long)n;
+			number = (unsigned long)n;
 		}
 		else
 		{
-			number = *(unsigned long long int*)ap;
+			number = *(unsigned long int*)ap;
 		}
 		ap += 2;
 		break;
@@ -66,17 +66,17 @@ int* printf_number(int* ap, int length, bool sign, int radix)
 	case PRINTF_LENGTH_LONG_LONG:
 		if (sign)
 		{
-			long long int n = *(long long int*)ap;
+			long int n = *(long int*)ap;
 			if (n < 0)
 			{
 				n = -n;
 				number_sign = -1;
 			}
-			number = (unsigned long long)n;
+			number = (unsigned long)n;
 		}
 		else
 		{
-			number = *(unsigned long long int*)ap;
+			number = *(unsigned long int*)ap;
 		}
 		ap += 4;
 		break;
@@ -87,11 +87,27 @@ int* printf_number(int* ap, int length, bool sign, int radix)
 	
 	/* convert number to ASCII (string) */
 	do
-	{	char *ptr_number;
-		ptr_number = &number;
-		ptr_number++;
-		hex_convert(ptr_number, hexavalue);
-		buffer[position++] = hexavalue;
+	{
+		if (radix == 16)
+		{
+			char *ptr_number = (char*)&number;
+			char *hexavalue;
+
+			*hexavalue = 0;
+			ptr_number++;
+			hex_convert(ptr_number, hexavalue);
+			buffer[position++] = *hexavalue;
+		}
+		else if (radix == 8)
+		{
+			int *ptr_octal = (int*)&number;
+			char *octalvalue;
+			
+			octalvalue = 0;
+			ptr_octal++;
+			octavalue = (char*)oct_convert(ptr_octal);
+			buffer[position++] = *octalvaule;
+		}
 	} while (number > 0); 
 
 	/* add sign */

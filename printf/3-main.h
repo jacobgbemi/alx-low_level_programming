@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
+#include <unistd.h>
 
 
 /* length & state macros */
@@ -25,17 +26,18 @@
 
 #define PRINTF_LENGTH_DEFAULT 0
 #define PRINTF_LENGTH_SHORT_SHORT 1
-#define PRINTF_LENGH_SHORT 2
+#define PRINTF_LENGTH_SHORT 2
 #define PRINTF_LENGTH_LONG 3
-#define PRINTF_LENGHT_LONG_LONG 4
+#define PRINTF_LENGTH_LONG_LONG 4
 
 #define true 1
 #define false 0
 
 
-int(char c);
+int _putchar(char c);
+int *oct_convert(int decnum);
 void hex_convert(char *str, char *hex);
-void puts(const char* str);
+void _puts(const char* str);
 int* print_number(int ap, int length, bool sign, int radix);
 void _printf(const char* format, ...);
 
