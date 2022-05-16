@@ -16,12 +16,13 @@
 
 void _printf(const char* format, ...)
 {
-	int* ap = (int*)&format; /* ap - argument parameter */
+	int ap = (int*)&format; /* ap - argument parameter */
+
 	int state = PRINTF_STATE_NORMAL;
 	int length = PRINTF_LENGTH_DEFAULT;
 	int radix = 10;
 	bool sign = false;
-
+	
 	ap++;
 
 	while (*format)
@@ -136,6 +137,5 @@ void _printf(const char* format, ...)
 
 		format++;
 	}
-
 }
 
