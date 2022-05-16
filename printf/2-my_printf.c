@@ -1,22 +1,9 @@
 #include "3-main.h"
 
 
-#define PRINTF_STATE_NORMAL 0
-#define PRINTF_STATE_LENGTH 1
-#define PRINTF_STATE_LENGTH_SHORT 2
-#define PRINTF_STATE_LENGTH_LONG 3
-#define PRINTF_STATE_SPEC 4
-/* #define PRINTF_STATE_SPEC_DEFAULT 0 */
-
-#define PRINTF_LENGTH_DEFAULT 0
-#define PRINTF_LENGTH_SHORT_SHORT 1
-#define PRINTF_LENGH_SHORT 2
-#define PRINTF_LENGTH_LONG 3
-#define PRINTF_LENGHT_LONG_LONG 4
-
-void _printf(const char* format, ...)
+void myprintf(const char* format, ...)
 {
-	int ap = (int*)&format; /* ap - argument parameter */
+	int *ap = (int*)&format; /* ap - argument parameter */
 
 	int state = PRINTF_STATE_NORMAL;
 	int length = PRINTF_LENGTH_DEFAULT;
@@ -75,10 +62,10 @@ void _printf(const char* format, ...)
 			switch (*format)
 			{
 			case 'l':
-				length = PRINTF_STATE_LENGTH_LONG_LON;
+				length = PRINTF_LENGTH_LONG_LONG;
 				state = PRINTF_STATE_SPEC;
 				break;
-			defaUlt:
+			default:
 				format++;
 				break;
 

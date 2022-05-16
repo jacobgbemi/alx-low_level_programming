@@ -6,8 +6,11 @@ char *convert(unsigned int, int);
 
 int main(void)
 {
-	myprintf("www.firmcodes.com \n %d", 9);
-
+	myprintf("www.firmcodes.com \n %d", 3339);
+	myprintf("hexadecimal: %x\n", 9933);
+	myprintf("octal: %o\n", 9333);
+	myprintf("negative number: %d, %i\n", -933, -1330);
+	
 	return (0);
 }
 
@@ -39,6 +42,7 @@ void myprintf(char *format, ...)
 			i = va_arg(arg, int);
 			putchar(i);
 			break;
+		case 'i':
 		case 'd': /* fetch decimal/integer argument */
 			d = va_arg(arg, int);
 			if (d < 0)
@@ -71,10 +75,10 @@ void myprintf(char *format, ...)
 char *convert(unsigned int num, int base)
 {
 	static char Representation[] = "0123456789ABCDEF";
-	static char buffer[50];
+	static char buffer[100];
 	char *ptr;
 
-	ptr = &buffer[49];
+	ptr = &buffer[99];
 	*ptr = '\0';
 
 	do {
@@ -84,3 +88,44 @@ char *convert(unsigned int num, int base)
 
 	return (ptr);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

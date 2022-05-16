@@ -38,8 +38,8 @@ int _putchar(char c);
 int oct_convert(int decnum);
 void hex_convert(char *str, char *hex);
 void _puts(const char* str);
-int* print_number(int ap, int length, bool sign, int radix);
-void _printf(const char* format, ...);
+int *printf_number(int *ap, int length, bool sign, int radix);
+void myprintf(const char* format, ...);
 
 #endif
 

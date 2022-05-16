@@ -11,12 +11,17 @@
 
 
 
-int* printf_number(int* ap, int length, bool sign, int radix)
+int *printf_number(int *ap, int length, bool sign, int radix)
 {
-	char *buffer;
+	static char buffer[50];
+	static char Representation[] = "0123456789ABCDEF";
 	unsigned long number;
+	int position = 0;
 	int number_sign = 1;
-	int position = 0; /* current position in the buffer   */
+	char *ptr;
+
+	ptr = &buffer[49];
+	*ptr = '\0';
 	
 	/* process length */
 	switch (length)
@@ -54,7 +59,7 @@ int* printf_number(int* ap, int length, bool sign, int radix)
 				number_sign = -1;
 
 			}
-			number = (unsigned long)n;
+			number = (long int)n;
 		}
 		else
 		{
@@ -72,7 +77,7 @@ int* printf_number(int* ap, int length, bool sign, int radix)
 				n = -n;
 				number_sign = -1;
 			}
-			number = (unsigned long)n;
+			number = (long int)n;
 		}
 		else
 		{
@@ -86,25 +91,11 @@ int* printf_number(int* ap, int length, bool sign, int radix)
 	}
 	
 	/* convert number to ASCII (string) */
-	do
-	{
-		if (radix == 16)
-		{
-			char *ptr_number = (char*)&number;
-			
-			ptr_number++;
-			hex_convert(ptr_number, buffer[position++]);
-		}
-		else if (radix == 8)
-		{
-			int *ptr_octal =(int*)&number;
-						
-			ptr_octal++;
-			buffer[position++] = oct_convert(*ptr_octal);
-	
-		}
+	do {
+		*--ptr = Representation[number % radix];
+		number /= radix;		
 
-	}while (number > 0); 
+	} while (number != 0); 
 
 	/* add sign */
 	if (sign && number_sign < 0)
@@ -116,6 +107,6 @@ int* printf_number(int* ap, int length, bool sign, int radix)
 	while (--position >= 0)
 		_putchar(buffer[position]);
 
-	return ap;
+	return (ap);
 
 } 
