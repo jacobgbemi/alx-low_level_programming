@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - print varying strings argument
+ * print_strings - print varying strings argument
  * @separator: delimiter
  * @n: amount of arguments in list
  */
