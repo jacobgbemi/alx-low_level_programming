@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _putchar(char c)
+char _putchar(char c)
 {
 	return write(1, &c, 1);
 }
@@ -8,8 +8,24 @@ int _putchar(char c)
 
 int print_char(va_list ap)
 {
-	int c = va_arg(ap, int);
+	char c = va_arg(ap, int);
 	return _putchar(c);
+       /* char *s;
+	char c;
+
+	c = va_arg(ap, int);
+
+	if (c == 0)
+		c = '\0';
+
+	s = malloc(sizeof(char) * 2);
+	if (s == NULL)
+		return (NULL);
+	s[0] = c;
+	s[1] = '\0';
+	
+	return (s); 
+	*/
 }
 
 
@@ -28,4 +44,10 @@ int print_str(va_list ap)
 	return (0);
 }
 
+int print_percent(va_list ap)
+{
+	if (va_arg(ap, int) == '%')
+		return _putchar('%');
+	return (0);
 
+}
