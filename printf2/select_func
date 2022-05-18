@@ -8,5 +8,5 @@ int (*select_func(char c))(va_list)
 	if (c == 's')
 		return (print_str);
 
-	return (0);
+	return NULL;
 }

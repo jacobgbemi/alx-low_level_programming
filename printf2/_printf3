@@ -4,6 +4,7 @@ int _printf(const char * const format, ...)
 {
 	va_list ap;
 	int i = 0;
+	int (*func)(va_list);
 
 	va_start(ap, format);
 
@@ -12,8 +13,13 @@ int _printf(const char * const format, ...)
 	{
 		if (format[i + 1] == '%')
 		{
-			select_func(format[i + 1])(ap);
-			i++;
+			func = select_func(format[i + 1]);
+			if (func != NULL)
+			{
+				func(ap);
+				i++;
+			}
+			
 		}
 		else
 		{
