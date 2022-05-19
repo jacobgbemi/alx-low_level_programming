@@ -15,19 +15,19 @@ int _printf(const char *format, ...)
 		{
 			_putchar(format[i]);
 		}
-		else if (format[i + 1] == '%')
-		{
-			_putchar('%');
-		}
 		else
 		{
-			f = select_func(format[i + 1]);
-			if (f != NULL)
+			if (format[i +1] == '%')
+				_putchar('%');
+			else
 			{
-				f(ap);
-				i++;
+				f = select_func(format[i + 1]);
+				while (f != NULL)
+				{
+					f(ap);
+					i++;
+				}
 			}
-			
 		}
 		i++;
 	}

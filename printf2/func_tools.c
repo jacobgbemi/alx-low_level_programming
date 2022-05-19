@@ -10,7 +10,8 @@ int print_char(va_list ap)
 {
 	char c = va_arg(ap, int);
 	return _putchar(c);
-       /* char *s;
+
+	/*char *s;
 	char c;
 
 	c = va_arg(ap, int);
@@ -24,8 +25,8 @@ int print_char(va_list ap)
 	s[0] = c;
 	s[1] = '\0';
 	
-	return (s); 
-	*/
+	return (s); */
+	
 }
 
 
