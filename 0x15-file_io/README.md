@@ -52,7 +52,7 @@ In this project, I learned the use of I/O system calls ```open```, ```close```, 
 - [100-elf_header.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x15-file_io/100-elf_header.c) - a program that displays the information contained in the ELF header at the start of an ELF file.
   - Usage: elf_header elf_filename
   - Displayed information: (no less, no more, do not include trailing whitespace)
-    - bMagic
+    - Magic
     - Class
     - Data
     - Version
