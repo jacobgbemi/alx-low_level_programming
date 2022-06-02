@@ -13,24 +13,31 @@ I this project, I perform further tasks on the use of single link lists.
 
 ###  2. Add node
 - [2-add_nodeint.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/2-add_nodeint.c) - a function that adds a new node at the beginning of a ```listint_t``` list.
+- To compile program, run ```gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-add_nodeint.c 0-print_listint.c -o c```
 
 ###  3. Add node at the end
 - [3-add_nodeint_end.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/3-add_nodeint_end.c) - a function that adds a new node at the end of a ```listint_t``` list.
+- To compile program, run ```gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-add_nodeint_end.c 0-print_listint.c -o d```
 
 ###  4. Free list
 - [4-free_listint.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/4-free_listint.c) - a function that frees a ```listint_t``` list.
+- To compile program, run ```gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 3-add_nodeint_end.c 0-print_listint.c 4-free_listint.c -o e```
 
 ###  5. Free
 - [5-free_listint2.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/5-free_listint2.c) - a function that frees a ```listint_t``` list.
+- To compile program, run ```gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c -o f```
 
 ###  6. Pop
 - [6-pop_listint.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/6-pop_listint.c) - a function that deletes the head node of a ```listint_t``` linked list, and returns the head node’s data (n).
+- To compile program, run ```gcc -Wall -pedantic -Werror -Wextra -std=gnu89 6-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c 6-pop_listint.c -o g```
 
 ###  7. Get node at index
 - [7-get_nodeint.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/7-get_nodeint.c) - a function that returns the nth node of a ```listint_t``` linked list.
+- To compile program, run ```gcc -Wall -pedantic -Werror -Wextra -std=gnu89 7-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c 7-get_nodeint.c -o h```
 
 ###  8. Sum list
 - [8-sum_listint.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/8-sum_listint.c) -  a function that returns the sum of all the data (n) of a ```listint_t``` linked list
+- To compile program, run ```gcc -Wall -pedantic -Werror -Wextra -std=gnu89 8-main.c 3-add_nodeint_end.c 5-free_listint2.c 8-sum_listint.c -o i```
 
 ###  9. Insert
 - [9-insert_nodeint.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/9-insert_nodeint.c) - a function that inserts a new node at a given position.
@@ -38,12 +45,14 @@ I this project, I perform further tasks on the use of single link lists.
   - where ```idx``` is the index of the list where the new node should be added. Index starts at ```0```
   - Returns: the address of the new node, or ```NULL``` if it failed
   - if it is not possible to add the new node at index ```idx```, do not add the new node and return ```NULL```
+  - To compile program, run ```gcc -Wall -pedantic -Werror -Wextra -std=gnu89 9-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c 9-insert_nodeint.c -o j```
 
 ###  10. Delete at index
 - [10-delete_nodeint.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/10-delete_nodeint.c) - a function that deletes the node at index ```index``` of a ```listint_t``` linked list.
   - Prototype: int delete_nodeint_at_index(listint_t **head, unsigned int index);
   - where ```index``` is the index of the node that should be deleted. Index starts at ```0```
   - Returns: ```1``` if it succeeded, ```-1``` if it failed
+  - To compile program, run ```gcc -Wall -pedantic -Werror -Wextra -std=gnu89 10-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c 10-delete_nodeint.c -o k```
 
 ###  11. Reverse list
 - [100-reverse_listint.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/100-reverse_listint.c) -  a function that reverses a ```listint_t``` linked list.
@@ -52,6 +61,7 @@ I this project, I perform further tasks on the use of single link lists.
   - You are not allowed to use more than ```1``` loop.
   - You are not allowed to use ```malloc```, ```free```` or arrays
   - You can only declare a maximum of two variables in your function
+  - To compile program, run ```gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c 100-reverse_listint.c -o l```
 
 ###  12. Print (safe version)
 - [101-print_listint_safe.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/101-print_listint_safe.c) - a function that prints a ```listint_t``` linked list.
@@ -60,6 +70,7 @@ I this project, I perform further tasks on the use of single link lists.
   - This function can print lists with a loop
   - You should go through the list only once
   - If the function fails, exit the program with status ```98```
+  - To compile program, run ```gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-main.c 2-add_nodeint.c 101-print_listint_safe.c -o m```
 
 ###  13. Free (safe version)
 - [102-free_listint_safe.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/102-free_listint_safe.c) - a function that frees a ```listint_t``` list.
@@ -68,6 +79,7 @@ I this project, I perform further tasks on the use of single link lists.
   - You should go though the list only once
   - Returns: the size of the list that was free’d
   - The function sets the ```head``` to ```NULL```
+  - To compile program, run ```gcc -Wall -pedantic -Werror -Wextra -std=gnu89 102-main.c 2-add_nodeint.c 101-print_listint_safe.c 102-free_listint_safe.c -o n```
 
 ###  14. Find the loop
 - [103-find_loop.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/103-find_loop.c) - a function that finds the loop in a linked list.
@@ -75,3 +87,4 @@ I this project, I perform further tasks on the use of single link lists.
   - Returns: The address of the node where the loop starts, or NULL if there is no loop
   - You are not allowed to use ```malloc```, ```free``` or arrays
   - You can only declare a maximum of two variables in your function
+  - To compile program, run ```gcc -Wall -pedantic -Werror -Wextra -std=gnu89 103-main.c 2-add_nodeint.c 101-print_listint_safe.c 102-free_listint_safe.c 103-find_loop.c -o o```
