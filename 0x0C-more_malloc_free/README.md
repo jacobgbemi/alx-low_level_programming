@@ -2,8 +2,8 @@
 
 In this project, I learned more on memory allocation in C, how to use the ```exit```, ```calloc``` and ```realloc``` functions from the standard library and how to use them.
 - [main.h](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x0C-more_malloc_free/main.h) - header file containing all the function prototypes
-[test](https://github.com/jacobgbemi/alx-low_level_programming/tree/main/0x0C-more_malloc_free/test) - folder containing the c files for testing codes
-[_putchar.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x0C-more_malloc_free/_putchar.c) - a function to print char to stdout
+- [test](https://github.com/jacobgbemi/alx-low_level_programming/tree/main/0x0C-more_malloc_free/test) - folder containing the c files for testing codes
+- [_putchar.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x0C-more_malloc_free/_putchar.c) - a function to print char to stdout
 
 ## Tasks
 ### 0. Trust no one
