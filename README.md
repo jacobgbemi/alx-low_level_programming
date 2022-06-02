@@ -2,6 +2,7 @@
 
 This repository contains programs written for Low Level Programming track in the [ALX](https://www.alxafrica.com/) program. In these projects, I worked through virtual machine (Vagrant) using Linux terminal to write basic C codes, starting with understanding data types, variables, input and output commands, operators, if-else statements, looping, functions and neseted loops, pointers and arrays, understanding of memory allocation in C.  I learned how to apply these knowledge to solve practical problems. Below are the lists other basic concepts in C that I practically engaged with. 
 
+## Hatching Out
 - [0x00-hello_world](https://github.com/jacobgbemi/alx-low_level_programming/tree/master/0x00-hello_world)
 - [0x01-variables_if_else_while](https://github.com/jacobgbemi/alx-low_level_programming/tree/master/0x01-variables_if_else_while)
 - [0x02-functions_nested_loops](https://github.com/jacobgbemi/alx-low_level_programming/tree/master/0x02-functions_nested_loops)
@@ -19,11 +20,11 @@ This repository contains programs written for Low Level Programming track in the
 - [0x0E-structures_typedef](https://github.com/jacobgbemi/alx-low_level_programming/tree/main/0x0E-structures_typedef)
 - [0x0F-function_pointers](https://github.com/jacobgbemi/alx-low_level_programming/tree/main/0x0F-function_pointers)
 - [0x10-variadic_functions](https://github.com/jacobgbemi/alx-low_level_programming/tree/main/0x10-variadic_functions)
-- [0x12-singly_linked_lists](https://github.com/jacobgbemi/alx-low_level_programming/tree/main/0x12-singly_linked_lists)
-- [0x13-more_singly_linked_lists](https://github.com/jacobgbemi/alx-low_level_programming/tree/main/0x13-more_singly_linked_lists)
 - [0x14-bit_manipulation](https://github.com/jacobgbemi/alx-low_level_programming/tree/main/0x14-bit_manipulation)
 - [0x15-file_io](https://github.com/jacobgbemi/alx-low_level_programming/tree/main/0x15-file_io)
-
+## Data Structures & Algorithm
+- [0x12-singly_linked_lists](https://github.com/jacobgbemi/alx-low_level_programming/tree/main/0x12-singly_linked_lists)
+- [0x13-more_singly_linked_lists](https://github.com/jacobgbemi/alx-low_level_programming/tree/main/0x13-more_singly_linked_lists)
 
 ### Tools
 - - Betty coding style: [Betty](https://github.com/holbertonschool/Betty/wiki)
