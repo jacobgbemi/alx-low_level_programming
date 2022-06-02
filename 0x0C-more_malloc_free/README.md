@@ -22,11 +22,11 @@ if ```NULL``` is passed, treat it as an empty string
 
 ### 2. _calloc
 - [2-calloc.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x0C-more_malloc_free/2-calloc.c) - a function that allocates memory for an array, using ```malloc```.
-  Prototype: ```void *_calloc(unsigned int nmemb, unsigned int size);```
-  The ```_calloc``` function allocates memory for an array of ```nmemb``` elements of ```size``` bytes each and returns a pointer to the allocated memory.
-  The memory is set to zero
-  If ```nmemb``` or ```size``` is ```0```, then ```_calloc``` returns ```NULL```
-  If ```malloc``` fails, then ```_calloc``` returns ```NULL```
+  - Prototype: ```void *_calloc(unsigned int nmemb, unsigned int size);```
+  - The ```_calloc``` function allocates memory for an array of ```nmemb``` elements of ```size``` bytes each and returns a pointer to the allocated memory.
+  - The memory is set to zero
+  - If ```nmemb``` or ```size``` is ```0```, then ```_calloc``` returns ```NULL```
+  - If ```malloc``` fails, then ```_calloc``` returns ```NULL```
 
 ### 3. array_range
 - [3-array_range.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x0C-more_malloc_free/3-array_range.c) - a function that creates an array of integers.
