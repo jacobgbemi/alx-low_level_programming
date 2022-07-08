@@ -2,8 +2,8 @@
 
 In this project, I learned the use of doubly linked lists, and the difference between singly linked lists and doubly linked lists. In doubly linked lists, the next node store the address of the previous node and the previous node store the address of the next node.
 
-- [lists.h]() - header file containing the function prototypes and data structure
-- [test]() - test folder containing the d files for code testing
+- [lists.h](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/lists.h) - header file containing the function prototypes and data structure
+- [test](https://github.com/jacobgbemi/alx-low_level_programming/tree/main/0x17-doubly_linked_lists/test) - test folder containing the d files for code testing
 
 - ## Data Structure
    ```
