@@ -61,4 +61,38 @@ In this project, I learned the diffirence between static lirary and dynamic libr
   - Run python3 ```100-tests.py```` to test your code
 
 ### 3. Code injection: Win the Giga Millions!
-- Still working on this code.
+- [101-make_me_win.sh](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x18-dynamic_libraries/101-make_me_win.sh) - shell script to inject code into the gm file [here](https://github.com/holbertonschool/0x18.c)
+	### Steps to Approach this task 
+	1. clone the repo
+		```git clone https://github.com/holbertonschool/0x18.c.git```
+	2. Confirm the the type of library calls for the file 
+		- ```ldd ./gm```
+		- It should standard C library
+	3. Get more information about the file
+		```ltrace ./gm```
+	4. Get further information about the file
+		- ```ltrace ./gm 9 8 10 24 75 9```
+		- ```nm -D ./gm```
+		- Note the displayed function calls
+
+	5. To inject into printf function, check man page to know the exact protoype
+		```man 3 printf```
+	6. To get more information the content of the file, run string command:
+		- ```strings gm```
+		- When you win, it will print "Congratulations, you win the Jackpot"
+	7. Create a ```myprintf.c``` file to inject into the library calls, to output:
+		```"Congratulations, you win the Jackpot"```
+	8. Create shared object file from myprintf.c
+		```gcc myprintf.c -c -fPIC```
+	9. Generate the .so file
+		```gcc myprintf.o -shared -o libmyprintf.so```
+	10. Inject into the gm program to change its behaviour
+		```LD_PRELOAD=/$PWD/libmyprintf.so ./gm 8 9 10 24 75 9```
+	11. When you win:
+		- the gm program should print ```"8 9 10 24 75 -9"``` in the first line
+		- and ```"Congratulations, you win the Jackpot"``` in the second line
+	12. So add ```"8 9 10 24 75 -9"``` to the ```myprintf.c``` file
+	13. Do ```ltrace ./gm``` again to know the number of times printf function was called
+		- It should be 6 times
+	14 Add ```exit(EXIT_SUCCESS)``` to the ```myprintf.c``` file to print the once and exit
+	15. Create the shell script and add the the path to the ```.so``` file and ```LD_PRELOAD``` path
