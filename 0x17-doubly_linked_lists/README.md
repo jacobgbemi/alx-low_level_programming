@@ -111,7 +111,7 @@ In this project, I learned the use of doubly linked lists, and the difference be
 ### 10. Palindromes
 - [102-result](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/102-result) - the largest palindrome made from the product of two 3-digit numbers.
   - [102-palindrome_three_digits.py](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/102-palindrome_three_digits.py) - Python code to get this result for 3-digit numbers, and [102-palindrome_two_digits.py](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/102-palindrome_two_digits.py) for 2-digit numbers
-  - [102-palindrome_n_digits.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/102-palindrome_n_digits.c) - C program to get this result
+  - [102-palindrome_three_digits.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/102-palindrome_three_digits.c) - C program to get this result
   
 ### 11. crackme5
 - [103-keygen.c](https://github.com/jacobgbemi/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/103-keygen.c) - a keygen for [crackme5](https://github.com/holbertonschool/0x17.c).
