@@ -94,5 +94,5 @@ In this project, I learned the diffirence between static lirary and dynamic libr
 	12. So add ```"8 9 10 24 75 -9"``` to the ```myprintf.c``` file
 	13. Do ```ltrace ./gm``` again to know the number of times printf function was called
 		- It should be 6 times
-	14 Add ```exit(EXIT_SUCCESS)``` to the ```myprintf.c``` file to print the once and exit
+	14. Add ```exit(EXIT_SUCCESS)``` to the ```myprintf.c``` file to print the once and exit
 	15. Create the shell script and add the the path to the ```.so``` file and ```LD_PRELOAD``` path
