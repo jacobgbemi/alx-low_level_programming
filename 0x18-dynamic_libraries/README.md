@@ -87,11 +87,11 @@ In this project, I learned the diffirence between static lirary and dynamic libr
 	9. Generate the .so file
 		```gcc myprintf.o -shared -o libmyprintf.so```
 	10. Inject into the gm program to change its behaviour
-		```LD_PRELOAD=/$PWD/libmyprintf.so ./gm 8 9 10 24 75 9```
+		```LD_PRELOAD=/$PWD/libmyprintf.so ./gm 9 8 10 24 75 9```
 	11. When you win:
-		- the gm program should print ```"8 9 10 24 75 -9"``` in the first line
+		- the gm program should print ```"9 8 10 24 75 -9"``` in the first line
 		- and ```"Congratulations, you win the Jackpot"``` in the second line
-	12. So add ```"8 9 10 24 75 -9"``` to the ```myprintf.c``` file
+	12. So add ```"9 8 10 24 75 -9"``` to the ```myprintf.c``` file
 	13. Do ```ltrace ./gm``` again to know the number of times printf function was called
 		- It should be 6 times
 	14. Add ```exit(EXIT_SUCCESS)``` to the ```myprintf.c``` file to print the once and exit
