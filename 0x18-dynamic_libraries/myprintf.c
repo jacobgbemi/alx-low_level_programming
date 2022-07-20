@@ -8,8 +8,8 @@
  */
 int printf(const char *format, ...)
 {
-	fwrite("9 8 10 24 75 -9\n", 17, 6, stderr);
-	fwrite("Congratulations, you win the Jackpot!\n", 38, 5, stderr);
+	write(1, "9 8 10 24 75 -9\n", 17);
+	write(1, "Congratulations, you win the Jackpot!\n", 38);
 	exit(EXIT_SUCCESS); /* print once and exit*/
 
 }
