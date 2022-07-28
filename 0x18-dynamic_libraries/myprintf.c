@@ -4,7 +4,7 @@
 /**
  * printf - preform printf function
  * @format: the command
- * Return: exit with success
+ * exit with success
  */
 int printf(const char *format, ...)
 {
